@@ -34,7 +34,7 @@ docker package repository:
     - humanname: {{ grains["os"] }} {{ grains["oscodename"]|capitalize }} Docker Package Repository
     - keyid: f76221572c52609d
 {%- endif %}
-    - keyserver: keyserver.ubuntu.com
+    - keyserver: hkp://keyserver.ubuntu.com:80
     - file: /etc/apt/sources.list.d/docker.list
     - refresh_db: True
     - require_in:
